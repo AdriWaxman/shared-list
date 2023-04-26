@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import path from 'path';
-import eslint from 'vite-plugin-eslint';
+import path from 'path'
+import eslint from 'vite-plugin-eslint'
 
 
 
@@ -12,9 +12,7 @@ export default defineConfig({
     eslint(),
   ],
   resolve: {
-    alias: {
-      "@" : path.resolve(__dirname,'./src'),
-    },
+    alias: [{ find: "@" , replacement: path.resolve(__dirname,'./src')}],
   },
   server: {
     open : true,

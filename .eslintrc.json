@@ -1,5 +1,6 @@
 {
-  "extends": ["react-app", "prettier"],
+  "extends": ["react-app"],
+  "plugins": ["prettier"],
   "globals": {
     "vi": true
   }
